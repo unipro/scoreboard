@@ -17,8 +17,8 @@
 # 빌드방법
 
 ## 빌드에 필요한 라이브러리
-* [http://www.wxwidgets.org wxWidgets] - 그래픽 인터페이스 엔진
-* [http://www.libsdl.org SDL] - 오디오 출력
+* [wxWidgets](http://www.wxwidgets.org) - 그래픽 인터페이스 엔진
+* [SDL](http://www.libsdl.org) - 오디오 출력
 
 ## 운영체제와 개발 도구에 따른 개발 환경 설정
 * 윈도우 Visual Studio 2008
@@ -48,8 +48,8 @@
   1. Visual Studio로 vstudio9.0/scoreboard.sln를 열고, 메뉴의 Build->"Build Solution" 클릭
 
 # 관련정보 링크
-* [http://blog.naver.com/scoreboard 홈페이지]
-* [http://www.pcscoreboards.com www.pcscoreboards.com]
+* [홈페이지](http://blog.naver.com/scoreboard)
+* [www.pcscoreboards.com](http://www.pcscoreboards.com)
   * 현재로써는 점수판보다 더 기능적으로 뛰어난 프로그램입니다.
   * 그러나 오픈소스가 아니고 윈도우가 아닌 다른 운영체제를 지원하지 않습니다.
-* [http://www.wkbl.or.kr/about/manage_system.asp 농구 규칙]
+* [농구 규칙](http://www.wkbl.or.kr/about/manage_system.asp)
