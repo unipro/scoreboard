@@ -24,6 +24,7 @@ AC_CONFIG_SRCDIR([wx/main.cpp])
 
 dnl Checks for programs.
 AC_ISC_POSIX
+AM_PROG_AR
 AC_PROG_CXX
 AC_PROG_RANLIB
 
