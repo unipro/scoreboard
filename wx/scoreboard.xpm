@@ -1,5 +1,5 @@
 /* XPM */
-static char * scoreboard_xpm[] = {
+static const char * scoreboard_xpm[] = {
 "48 48 538 2",
 "  	c None",
 ". 	c #984601",

@@ -5,10 +5,6 @@
 #include "GameConfigDialog.hpp"
 #include <wx/aboutdlg.h>
 
-#if defined(__WXGTK__) || defined(__WXMOTIF__)
-#include "scoreboard.xpm"
-#endif
-
 //      1    :         2         :    1
 // +---------+-------------------+---------+
 // |         |                   |         |
@@ -64,10 +60,6 @@ ScoreboardFrame::ScoreboardFrame(const wxString& title)
     : wxFrame(NULL, wxID_ANY, title, wxDefaultPosition, ScoreboardFrame::MIN_SIZE)
     , m_timer(this, ID_CLOCK_TIMER)
 {
-    // icon
-    static wxIcon icon(wxICON(scoreboard));
-    SetIcon(icon);
-
     // file menu
     wxMenu *game = new wxMenu;
     game->Append(new wxMenuItem(game, ID_NEW_GAME, wxT("New &Game\tCtrl+G")));

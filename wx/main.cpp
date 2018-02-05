@@ -3,6 +3,10 @@
 #include "GameConfigDatabase.hpp"
 #include "ScoreboardFrame.hpp"
 
+#if defined(__WXGTK__) || defined(__WXMOTIF__)
+#include "scoreboard.xpm"
+#endif
+
 IMPLEMENT_APP(MyApp)
 
 bool
@@ -14,9 +18,12 @@ MyApp::OnInit()
     // 영구 저장소에서 프로그램의 설정을 읽어온다.
     GameConfigDatabase db;
     db.Read(g_config);
-
+    
     // 프로그램의 메임프레임 시작
     ScoreboardFrame *boardFrame = new ScoreboardFrame(wxT("ScoreBoard"));
+    wxIcon *icon = new wxICON(scoreboard);
+    boardFrame->SetIcon(*icon);
+    free(icon);
     boardFrame->Centre();
     boardFrame->SetMinSize(ScoreboardFrame::MIN_SIZE);
     boardFrame->Show(true);
@@ -46,7 +53,7 @@ MyApp::OnExit()
     // 영구 저장소에 프로그램의 설정을 기록한다.
     GameConfigDatabase db;
     db.Write(g_config);
-    
+
     // return the standard exit code
     return wxApp::OnExit();
 }

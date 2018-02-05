@@ -30,9 +30,9 @@
       `SDL2=C:\SDL-2.0.1`
 * Debian 계열
   * wxWidgets
-    `sudo apt-get install libwxgtk2.8-dev`
+    `sudo apt-get install libwxgtk3.0-dev`
   * SDL
-    `sudo apt-get install libsdl-1.2dev`
+    `sudo apt-get install libsdl2-dev`
 * Redhat 계열
   * wxWidgets
     `sudo yum install wxGTK-devel wxBase`

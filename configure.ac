@@ -59,12 +59,12 @@ CPPFLAGS="$CPPFLAGS `wx-config --cxxflags`"
 LIBS="$LIBS `wx-config --libs`"
 
 dnl Checks for SDL
-AC_CHECK_PROG(sdlconfig,sdl-config,`which sdl-config`)
+AC_CHECK_PROG(sdlconfig,sdl2-config,`which sdl2-config`)
 if test x$sdlconfig = x ; then
    AC_MSG_ERROR([[Cannot find the sdl-config tool. Are development packages of SDL installed?]])
 fi
-CPPFLAGS="$CPPFLAGS `sdl-config --cflags`"
-LIBS="$LIBS `sdl-config --libs`"
+CPPFLAGS="$CPPFLAGS `sdl2-config --cflags`"
+LIBS="$LIBS `sdl2-config --libs`"
 
 dnl Output
 AC_CONFIG_FILES([Makefile CppUnitLite/Makefile model/Makefile test/Makefile wx/Makefile])
