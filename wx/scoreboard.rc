@@ -2,8 +2,8 @@
 // Name:        scoreboard.rc
 // Purpose:     a standard Win32 .rc file for the wxWindows samples
 // Author:      Vadim Zeitlin
-// Modified by: Daniel Jun
-// Copyright:   (c) 2014 Daniel Jun Daniel Jun <unipro.kr (at) gmail.com>
+// Modified by: Byungwan Jun
+// Copyright:   (c) 2014 Byungwan Jun <unipro.kr (at) gmail.com>
 // Licence:     wxWindows licence
 /////////////////////////////////////////////////////////////////////////////
 
@@ -18,7 +18,7 @@ scoreboard ICON "scoreboard.ico"
 #define wxUSE_NO_MANIFEST 0
 
 // Version
-// XXX I have no idea how to use it. - Daniel Jun
+// XXX I have no idea how to use it. - Byungwan Jun
 ID_VERSION_INFO VERSIONINFO
  FILEVERSION 0,2,1,0
  PRODUCTVERSION 0,2,1,0
@@ -36,11 +36,11 @@ BEGIN
     BEGIN
         BLOCK "041204b0"
         BEGIN
-            VALUE "CompanyName", "Daniel Jun"
+            VALUE "CompanyName", "Byungwan Jun"
             VALUE "FileDescription", "scoreboard"
             VALUE "FileVersion", "0, 2, 1, 0"
             VALUE "InternalName", "scoreboard"
-            VALUE "LegalCopyright", "Copyright (C) 2014 Daniel Jun"
+            VALUE "LegalCopyright", "Copyright (C) 2014 Byungwan Jun"
             VALUE "OriginalFilename", "scoreboard.exe"
             VALUE "ProductName", "scoreboard"
             VALUE "ProductVersion", "0, 2, 1, 0"

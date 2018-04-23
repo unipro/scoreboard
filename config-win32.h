@@ -14,7 +14,7 @@
 #define PACKAGE_TARNAME "scoreboard"
 
 /* Define to the home page for this package. */
-#define PACKAGE_URL "http://dev.naver.com/projects/scoreboard"
+#define PACKAGE_URL "http://github.com/unipro/scoreboard"
 
 /* Define to the version of this package. */
 #define PACKAGE_VERSION "0.2.1"

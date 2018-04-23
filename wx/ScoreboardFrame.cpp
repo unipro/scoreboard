@@ -241,13 +241,9 @@ ScoreboardFrame::OnAbout(wxCommandEvent& WXUNUSED(evt))
     info.SetName(wxT(PACKAGE_NAME));
     info.SetVersion(wxT(PACKAGE_VERSION));
     info.SetDescription(wxT("Simple scoreboard application"));
-    info.SetCopyright(wxT("Copyright (C) 2012 Daniel Jun"));
-#if defined(PACKAGE_URL)
+    info.SetCopyright(wxT("Copyright (C) 2012 Byungwan Jun"));
     info.SetWebSite(wxT(PACKAGE_URL));
-#else
-    info.SetWebSite(wxT("http://dev.naver.com/projects/scoreboard"));
-#endif
-    info.AddDeveloper(wxT("Daniel Jun"));
+    info.AddDeveloper(wxT("Byungwan Jun"));
 
     ::wxAboutBox(info);
 }

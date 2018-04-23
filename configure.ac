@@ -9,7 +9,7 @@ dnl WITHOUT ANY WARRANTY, to the extent permitted by law; without even the
 dnl implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 AC_INIT([scoreboard], [0.2.1], [scoreboard@naver.com], [scoreboard],
-	[http://dev.naver.com/projects/scoreboard])
+	[http://github.com/unipro/scoreboard])
 
 dnl Must come before AM_INIT_AUTOMAKE.
 AC_CONFIG_AUX_DIR([build-aux])
