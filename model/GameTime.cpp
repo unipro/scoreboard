@@ -23,9 +23,9 @@ GameTime::GameTime(IGameTimeView& view, IGameControlView& ctrlView, GameConfig& 
     , m_view(view)
     , m_ctrlView(ctrlView)
     , m_isPlaying(false)
-    , m_isBuzzing(false)
-    , m_buzzerReason(Buzzer_Ready)
     , m_attackStartTime(-1)
+    , m_buzzerReason(Buzzer_Ready)
+    , m_isBuzzing(false)
 {
     ResetTime();
     ResetPeriod();
@@ -60,7 +60,7 @@ void
 GameTime::StopBuzzer()
 {
     if (m_isBuzzing) {
-        if (GetTickCount() - m_buzzerStartTime > m_config.GetBuzzerLength()) {
+        if (static_cast<long>(GetTickCount() - m_buzzerStartTime) > m_config.GetBuzzerLength()) {
             m_view.StopBuzzer();
             m_isBuzzing = false;
         }
@@ -264,8 +264,8 @@ GameTime::ResetPeriod()
 
 // StopWatchTimer
 StopWatchTimer::StopWatchTimer()
-    : m_startTime(0)
-    , m_state(Timer_Stopped)
+    : m_state(Timer_Stopped)
+    , m_startTime(0)
 {
 }
 
